@@ -1,0 +1,3 @@
+## Quand on a la flemme...
+
+- [thefuck](https://github.com/nvbn/thefuck), la commande qui tape correctement à votre place.
