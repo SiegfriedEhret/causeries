@@ -1,0 +1,17 @@
+{
+  "name": "devoxx-france-2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bs serve",
+    "export:html": "bs export index.md",
+    "export:pdf": "bs pdf index.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backslide": "^2.3.3"
+  }
+}
