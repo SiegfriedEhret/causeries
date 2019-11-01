@@ -1,0 +1,25 @@
+{
+  "name": "devoxx-03",
+  "profile": "devoxx",
+  "regions": ["eu-central-1"],
+  "environment": {
+  	"MONGO_USERNAME": "siegfried"
+  },
+  "lambda": {
+  	"vpc": {
+  	  "subnets": [
+  	    "subnet-5d32f020",
+  	    "subnet-0a44cc61",
+  	    "subnet-67bc0d2a"
+  	  ],
+      "security_groups": [
+        "sg-a2cd9fc8"
+      ]
+  	}
+  },
+  "stages": {
+    "production": {
+      "domain": "devoxx-api.ehret.me"
+    }
+  }
+}

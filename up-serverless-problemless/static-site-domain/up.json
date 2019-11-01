@@ -1,0 +1,11 @@
+{
+  "name": "devoxx-02",
+  "profile": "devoxx",
+  "type": "static",
+  "regions": ["eu-central-1"],
+  "stages": {
+    "production": {
+      "domain": "devoxx-static.ehret.me"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "devoxx-01",
+  "profile": "devoxx",
+  "type": "static",
+  "regions": ["eu-central-1"]
+}
