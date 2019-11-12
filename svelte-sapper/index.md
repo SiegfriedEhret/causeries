@@ -4,7 +4,7 @@ layout: true
 
 <!-- This slide will serve as the base layout for all your slides -->
 .bottom-bar[
-  \#DevoxxFR
+  \#BlendWebMix
 ]
 
 ---
@@ -26,19 +26,19 @@ class: impact
 
 ---
 
-## You suffer
-
-## But why?
-
-&mdash; Napalm Death - You Suffer
-
----
-
 ## Y'a de la richesse dans nos âmes
 
 ## Y'a de la misère dans nos yeux
 
 &mdash; Pnl - Autre Monde
+
+---
+
+## You suffer
+
+## But why?
+
+&mdash; Napalm Death - You Suffer
 
 ---
 
@@ -51,29 +51,57 @@ class: impact
 - [Ractive](https://ractive.js.org/)
 - [Rollup](https://rollupjs.org/)
 - [Interview](https://changelog.com/podcast/332)
+
+À voir:
+
+- [The Return of 'Write Less, Do More' by Rich Harris | JSCAMP 2019](https://www.youtube.com/watch?v=BzX4aTRPzno)
 ]
 
 ---
 
 # Svelte
 
-- [svelte.technology (v2)](https://svelte.technology/): « The magical disappearing UI framework »
-- [v3.svelte.technology (v3 - beta)](https://v3.svelte.technology/): « Cybernetically enhanced web apps »
-- Pour démarrer une app: [sveltejs/template](https://github.com/sveltejs/template)
-- Pour démarrer un composant: [sveltejs/component-template](https://github.com/sveltejs/component-template)
-
+- [svelte.dev (v3)](https://svelte.dev/): « Cybernetically enhanced web apps »
 --
 
-![Quelques compagnies qui utilisent Svelte](./images/svelte-users.png)
+- Pour démarrer une app: [sveltejs/template](https://github.com/sveltejs/template)
+	- `npx degit sveltejs/template my-app`
+--
+
+- Pour démarrer un composant: [sveltejs/component-template](https://github.com/sveltejs/component-template)
+	- `npx degit sveltejs/component-template my-component`
+
+---
+
+# Reactivité
+
+- [Virtual DOM is pure overhead (DEC 27 2018)](https://svelte.dev/blog/virtual-dom-is-pure-overhead)
+- [Shift Dev 2019: "Rethinking Reactivity"](https://www.youtube.com/watch?v=gJ2P6hGwcgo)
+
+![](/images/rethinking-reactivity.png)
+
+---
+
+# Faire confiance au compilateur
+
+- Pas de «framework front» !
+--
+
+- Il y a des choses «bizarres»...
+--
+
+- ... Mais c'est comme ça !
 
 ---
 
 # Sapper
 
-- [sapper.svelte.technology](https://sapper.svelte.technology/): « Military-grade progressive web apps, powered by Svelte »
+- [sapper.svelte.dev](https://sapper.svelte.dev/): « Sapper, which is short for **S**velte **app** mak**er**, is your courageous and dutiful ally. »
+--
+
 - Pour démarrer une app: [sapper-template](https://github.com/sveltejs/sapper-template)
-	- Rollup
-	- Webpack
+	- `npx degit "sveltejs/sapper-template#rollup" my-app`
+	- `npx degit "sveltejs/sapper-template#webpack" my-app`
 
 ---
 
@@ -107,15 +135,20 @@ class: impact
 
 ## C'est cool
 
-- On n'embarque pas un framework (taille, perf)
 
+- On fait confiance au langage et au compilo.
+--
+
+- On n'embarque pas un framework (taille, perf).
 --
 
 - Expérience agréable.
-
 --
 
-- Sapper c'est génial.
+- Sapper c'est vraiment chouette.
+--
+
+- Ça ouvre des discussions entre frameworks.
 
 ---
 
@@ -123,15 +156,15 @@ class: impact
 
 ## C'est moins cool
 
-- v2: rien 😛, v3 (beta) et ça bouge.
-
+- Le passage à v2 vers v3 n'était pas évident.
 --
 
-- Sapper encore en alpha et sans doc
-
+- Sapper encore non stable (v0.27.x).
 --
 
 - Peu de devs, peu de clients... Pour l'instant !
+
+![Quelques compagnies qui utilisent Svelte](./images/svelte-users.png)
 
 ---
 
@@ -140,7 +173,7 @@ class: impact
 # Merci !
 
 .left[
-- Code: [github.com/SiegfriedEhret/talk-svelte-sapper](https://github.com/SiegfriedEhret/talk-svelte-sapper)
+- Code: [frama.link/svelte-sapper-code](https://frama.link/svelte-sapper-code)
 - Slides: [frama.link/svelte-sapper](https://frama.link/svelte-sapper)
 ]
 
@@ -157,7 +190,7 @@ class: impact
 ## Social
 
 ```
-@SiegfriedEhret ALL THE THINGS !
+@SiegfriedEhret
 ```
 
 - [twitter](https://twitter.com/SiegfriedEhret)
