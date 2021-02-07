@@ -3,7 +3,7 @@
     <h2 style="display: none;">AngularJS</h2>
     <aside class="notes">
       TEMPS = 17 min<br>
-      ROMAIN
+      SIEG
     </aside>
   </section>
 
@@ -13,7 +13,12 @@
     <p>
       Né en 2009 - Pas mort !
     </p>
-    <img src="./img/github/github-angular.png" alt="Angular sur Github" />
+    <dl>
+      <dt>Avril</dt>
+      <dd><img src="./img/github/github-angular-20160420.png" alt="Angular sur Github en avril" /></dd>
+      <dt>Septembre</dt>
+      <dd><img src="./img/github/github-angular-20160914.png" alt="Angular sur Github en septembre" /></dd>
+    </dl>
   </section>
   <section>
     <h3>Grosses versions</h3>
@@ -34,7 +39,6 @@
     <h3>Super pouvoirs</h3>
     <img src="./img/gifs/magnum.gif" alt="" style="height: 50vh;">
     <aside class="notes">
-      SIEG<br>
     </aside>
   </section>
   <section>
@@ -48,10 +52,6 @@
   <section>
     <h4 class="font-huge"><em>Two way data-binding</em></h4>
     <img src="./img/gifs/splendid.gif" alt="Sssssplendide" style="width: 160vh">
-    <aside class="notes">
-      C'est le coeur du framework.<br>
-      Evite de manipuler directement le DOM (à droite à gauche dans le code, sur différents évènements à plusieurs endroits...)
-    </aside>
   </section>
   <section>
     <h4 class="font-huge">Injection de dépendances et tests</h4>
@@ -59,41 +59,18 @@
     <p class="fragment"><a href="https://github.com/daniellmb/angular-test-patterns">Angular Test Patterns<br>
       <small>https://github.com/daniellmb/angular-test-patterns</small></a></p>
     <aside class="notes">
-      C'est aussi le coeur du framework<br>
-      Framework testable, gestion de l'injection de dépendances, coverage...<br>
-      Projets avec les bons patterns pour écrire ses test
+      Coeur du framework, framework testable, gestion de l'injection de dépendances, coverage...<br>
+      Projets avec les bons patterns pour écrire ses tests
     </aside>
   </section>
   <section>
-    <h4 class="font-huge">MVC ou MVVM => MVW</h4>
-    <ul class="fragment">
-      <li><a href="https://github.com/johnpapa/angular-styleguide/tree/master/a1">Le guide de John Papa<br>
-        <small>https://github.com/johnpapa/angular-styleguide/tree/master/a1</small></a></li>
-      <li><a href="https://github.com/toddmotto/angular-styleguide">Le guide de Todd Motto<br>
-        <small>https://github.com/toddmotto/angular-styleguide</small></a></li>
-    </ul>
-    <aside class="notes">
-      On est libre d'architecturer comme on veut.<br>
-      Des style guides sont disponibles pour nous aider dans ces choix.
-    </aside>
-  </section>
-  <section>
-    <h4 class="font-huge"><a href="https://code.angularjs.org/1.5.4/">angular-*<br>
-      <small>https://code.angularjs.org/1.5.4/</small></a><br>
+    <h4 class="font-huge"><a href="https://code.angularjs.org/1.5.8/">angular-*<br>
+      <small>https://code.angularjs.org/1.5.8/</small></a><br>
       Animation, accessibilité, routeur...
     </h class="font-huge"4>
     <p>Et tous les plugins de la communauté !</p>
     <aside class="notes">
       Les compléments officiels, et ceux de la communauté.
-    </aside>
-  </section>
-  <section>
-    <h4 class="font-huge">Les formulaires</h4>
-    <small><a href="http://www.yearofmoo.com/2014/09/taming-forms-in-angularjs-1-3.html">http://www.yearofmoo.com/2014/09/taming-forms-in-angularjs-1-3.html</a></small>
-    <img src="./img/gifs/awesome.gif" alt="C'est puissant" style="width:80vh">
-    <aside class="notes">
-      Toutes les possibilités d'angular quant à la validation et les contrôles de formulaires.<br>
-      Les validateurs custom depuis angular 1.3
     </aside>
   </section>
 
@@ -117,9 +94,9 @@
       <small>https://chrome.google.com/webstore/detail/angular-watchers/nlmjblobloedpmkmmckeehnbfalnjnjk</small></a></p>
     <p class="fragment"><em>bindonce</em></p>
     <aside class="notes">
-      * Problèmes de performance avec un dirty-checking assez consommateur<br>
-      * il faut surveiller le nombre de watchers<br>
-      * des solutions pour limiter leur nombre, comme le bindonce (bain d'once)
+      Problèmes régulièrement rencontrés dans nos projets d'entreprise (et des gros, pas des todo list à la jackie)<br>
+      Performance avec un dirty-checking assez consommateur<br>
+      Surveiller le nombre de watchers voir limiter leur nombre grâce à bindonce (bain d'once)
     </aside>
   </section>
   <section>
@@ -128,10 +105,10 @@
       <img src="./img/angular/logic-templates.png" alt="Angular logique dans les templates" style="height: 50vh;"><br>
       <small>https://twitter.com/ThomasC__/status/719257485308272640</small>
     </a>
+    <p class="fragment">La Séparation des préoccupations pas toujours évidente</p>
     <aside class="notes">
-      * beaucoup de code business peut se retrouver dans la vue<br>
-      * "separation of concerns" pas toujours évidente.<br>
-      * les possibilités du ng-repeat sont impossible à connaître par coeur ^^
+      Toutes les possibilités du ng-repeat sont impossible à connaître par coeur ^^<br>
+      Beaucoup de code business peut se retrouver dans la vue
     </aside>
   </section>
   <section>
@@ -141,10 +118,6 @@
         <small>http://www.yearofmoo.com/2012/11/angularjs-and-seo.html</small></a></p>
       <p>Les outils comme <a href="https://prerender.io/">https://prerender.io</a>/</p>
     </div>
-    <aside class="notes">
-      * Avant: Google ne crawle pas le JS<br>
-      * Besoin de générer l'html pour le servir aux moteurs de recherche<br>
-    </aside>
   </section>
 
   <section>
@@ -157,7 +130,7 @@
     <p class="fragment">Difficile à dire 😕</p>
     <aside class="notes">
       SIEG<br>
-      * Chaque version 1.x et 2.x vie sa vie (Play Framework<br>
+      * Chaque version 1.x et 2.x vie sa vie (Play Framework)<br>
       * Puis composants/concepts 2.x intégrés en 1.x<br>
       * Adapter = code 1.x et 2.x tournent en même temps<br>
       * Finalement migrer tout le monde en 2.x !<br>
@@ -172,17 +145,20 @@
         <small>http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro</small></a></li>
       <li><a href="https://docs.angularjs.org/tutorial">Tutoriel PhoneCat<br>
         <small>https://docs.angularjs.org/tutorial</small></a></li>
-      <li><a href="https://stackoverflow.com/tags/angularjs">>164000 questions sur stackoverflow.<br>
+      <li><a href="https://stackoverflow.com/tags/angularjs">><span class="line-through">164000</span> 193000 questions sur stackoverflow.<br>
         <small>https://stackoverflow.com/tags/angularjs</small></a></li>
       <li><a href="https://github.com/gianarb/awesome-angularjs">Awesome AngularJS<br>
         <small>https://github.com/gianarb/awesome-angularjs</small></a></li>
+      <li><a href="https://github.com/johnpapa/angular-styleguide/tree/master/a1">Le guide de John Papa<br>
+        <small>https://github.com/johnpapa/angular-styleguide/tree/master/a1</small></a></li>
+      <li><a href="https://github.com/toddmotto/angular-styleguide">Le guide de Todd Motto<br>
+        <small>https://github.com/toddmotto/angular-styleguide</small></a></li>
     </ul>
   </section>
   <section>
     <h3>Et pour contribuer ?</h3>
     <ul>
       <li>~5 à 10 commits/jour avec ~1500 contributeurs</li>
-      <li>~300 PR ouvertes / ~6500 PR fermées</li>
       <li>Code bien documenté et très testé</li>
       <li>Important nombre de meetups</li>
       <li>Ses propres conférences : ng-Conf, ng-Europe...</li>
@@ -196,11 +172,15 @@
     <p>
       En gestation - Pas mort !
     </p>
-    <div>
-      <img src="./img/github/github-angular2.png" alt="Angular 2 sur Github" />
-    </div>
+    <dl>
+      <dt>Avril</dt>
+      <dd><img src="./img/github/github-angular2-20160420.png" alt="Angular 2 sur Github en avril" /></dd>
+      <dt>Septembre</dt>
+      <dd><img src="./img/github/github-angular2-20160914.png" alt="Angular 2 sur Github en septembre" /></dd>
+    </dl>
     <aside class="notes">
-      TEMPS = 22 min
+      TEMPS = 23 min<br>
+      ROMAIN
     </aside>
   </section>
   <section>
@@ -216,22 +196,28 @@
     </aside>
   </section>
   <section>
-    <h3>Allez un peu de Java !</h3>
+    <h3>Vous prendrez bien une tasse de café ?</h3>
     <img src="./img/angular2-code.png" alt="Angular 2 : JAVA ALL THE THINGS">
     <aside class="notes">
-      ROMAIN<br>
-      Communauté JavaScript pas totalement enthousiame mais pour nous ça va le faire : il y a des imports à la scala, des classes, des annotations et du templating !<br>
-      On se croierait dans Spring
+      Java all the things, on se croirait dans Spring<br>
+      A quand les @Id, @Entity, @Serializable
     </aside>
   </section>
   <section>
     <h3>Grosses versions</h3>
     <ul>
       <li>55 versions alpha</li>
-      <li>15 versions beta</li>
+      <li>17 versions beta</li>
+      <li>7 versions rc</li>
     </ul>
     <p><img src="./img/meme/lol-guy.jpg" alt="LOLOLOL" style="width: 200px;"></p>
-    <p>Dernière disponible: 2.0.0-beta.15 le 13 avril 2016</p>
+    <p>Dernière disponible: 2.0.0 (FINAL !!!) le 14 septembre 2016</p>
+  </section>
+  <section>
+    <h3>ON EST IMPATIENT !</h3>
+    <aside class="notes">
+      Comme angular 2 est sorti et est donc désormais legacy, que doit-on regader ?
+    </aside>
   </section>
   <section>
     <h3>Super pouvoirs</h3>
@@ -240,14 +226,15 @@
   <section>
     <h4 class="font-huge">Moderne</h4>
     <ul>
-      <li>Shadow DOM</li>
-      <li>ES2015 Modules</li>
-      <li>Controllers, Scopes, Directives => [Web]Components</li>
+      <li>(Web) Components / Workers / Animation API</li>
       <li>Server Side Rendering</li>
+      <li>
+        Compilation AoT<br>
+        <small><a href="http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/">http://blog.mgechev.com/2016/08/14/ahead-of-time-compilation-angular-offline-precompilation/</a></small>
+      </li>
     </ul>
     <aside class="notes">
-      * Orienté composants<br>
-      * On choisit la façon dont les composants sont affichés: html, faux shadow dom, shadow dom<br>
+      Ahead-of-Time compilation, précompilation de certains fichiers pour améliorer les perfs de votre appli
     </aside>
   </section>
   <section>
@@ -259,16 +246,17 @@
   </section>
   <section>
     <h4 class="font-huge">SEO</h4>
-    <p class="fragment"><a href="https://docs.google.com/document/d/1q6g9UlmEZDXgrkY88AJZ6MUrUxcnwhBGS0EXbVlYicY/edit?pref=2&pli=1">Universal Angular 2<br>
-      <small>https://github.com/angular/universal</small><br>
-      <small>https://docs.google.com/document/d/1q6g9UlmEZDXgrkY88AJZ6MUrUxcnwhBGS0EXbVlYicY/edit?pref=2&pli=1</small></a>
+    <p class="fragment">
+      Universal Angular 2<br>
+      <small><a href="https://github.com/angular/universal">https://github.com/angular/universal</a></small><br>
+      <small><a href="https://docs.google.com/document/d/1q6g9UlmEZDXgrkY88AJZ6MUrUxcnwhBGS0EXbVlYicY/edit?pref=2&pli=1">https://docs.google.com/document/d/1q6g9UlmEZDXgrkY88AJZ6MUrUxcnwhBGS0EXbVlYicY/edit?pref=2&pli=1</a></small>
     </p>
   </section>
   <section>
     <h3>Boss fight</h3>
     <img src="./img/boss-fight/The-Knights-Who-Say-Ni-monty-python-and-the-holy-grail-591173_1008_566.jpg" alt="">
     <aside class="notes">
-      SIEG<br>
+      SIEG
     </aside>
   </section>
   <section>
@@ -277,7 +265,8 @@
     <aside class="notes">
       * Annonce difficile à ng-europe en 2014: on tue tous les concepts de la v1<br>
       * Sentiment d'avoir investit pour rien dans la version 1 ?<br>
-      * Et AtScript ? C'est quoi ce machin ? Et maintenant...
+      * Et AtScript ? C'est quoi ce machin ? Et maintenant c'est TypeScript...<br>
+      * Est-ce que ça va sortir un jour ?
     </aside>
   </section>
   <section>
@@ -285,15 +274,7 @@
     <img src="./img/angular/typescript.jpg" alt="Ancient TypeScript">
     <aside class="notes">
       * Et maintenant on doit faire du TypeScript ?<br>
-      * Et maîtriser Rx.js ?<br>
-    </aside>
-  </section>
-  <section>
-    <h4 class="font-huge">Pas «mobile first»</h4>
-    <img src="./img/gifs/doc-what.gif" alt="" style="height: 50vh;">
-    <aside class="notes">
-      Annoncé comme tel au départ, il a bien grossi.
-      Il doit être accompagné de Rx.js qui alourdi encore le package.
+      * Et maîtriser Rx.js ?
     </aside>
   </section>
   <section>
@@ -301,7 +282,7 @@
     <ul>
       <li>Tutoriels pour TypeScript, Dart. Pour JavaScript aussi (ouf !).</li>
       <li>Certains ebooks (<a href="https://ninja-squad.fr/">https://ninja-squad.fr/</a>...) déjà convertis.</li>
-      <li><a href="https://stackoverflow.com/questions/tagged/angular2">>4800 questions sur StackOverflow<br>
+      <li><a href="https://stackoverflow.com/questions/tagged/angular2">><span class="line-through">4800</span> 15000 questions sur StackOverflow<br>
         <small>https://stackoverflow.com/questions/tagged/angular2</small></a></li>
       <li><a href="https://github.com/AngularClass/awesome-angular2">Awesome Angular2<br>
         <small>https://github.com/AngularClass/awesome-angular2</small></a></li>
@@ -310,12 +291,14 @@
   <section>
     <h3>Et pour contribuer ?</h3>
     <ul>
-      <li>~5 commits/jour avec ~220 contributeurs</li>
-      <li>~170 PR ouvertes / ~3200 PR fermées</li>
+      <li>~5 commits/jour avec ~320 contributeurs</li>
       <li>Code documenté et "ultra" testé</li>
       <li>Profitera des confs et meetup en place</li>
       <li><a href="https://cla.developers.google.com/about/google-individual?csw=1">Contrat de contributeur Google<br>
         <small>https://cla.developers.google.com/about/google-individual?csw=1</small></a></li>
     </ul>
+    <aside class="notes">
+      Gros gros effort de la team Angular sur les issues et PR.
+    </aside>
   </section>
 </section>

@@ -5,8 +5,7 @@
     </a>
     <h2 style="">VanillaJS + jQuery</h2>
     <aside class="notes">
-      TEMPS = 4 min<br>
-      Comment nous allons procéder : introduction/chiffre, super pouvoir (ça force, ce qu'il a apporté...), boss fight (ses faiblesse, ses détracteurs...) et une petite conlusion
+      TEMPS = 4 min
     </aside>
   </section>
   <section>
@@ -27,12 +26,12 @@
       <li>2.0 / ES4 abandonnée</li>
       <li>ES3.1 => ES5 en décembre 2010</li>
       <li>ES6 => ES2015 en juin 2015</li>
+      <li>ES2016 en juin 2016</li>
     </ul>
     <aside class="notes">
-      Version 1.5 importante qui démarre l'ère ECMAScript
-      ES4 abandonnée pour diverses raisons techniques
+      Version 1.5 importante qui démarre l'ère ECMAScript<br>
+      ES4 abandonnée pour diverses raisons techniques<br>
       ES3.1 maintenue en parallèle par les géants qui sera reprise et renommée en ES5
-      Pour info, les générateurs sont dans Firefox depuis 2006
     </aside>
   </section>
   <section>
@@ -41,38 +40,42 @@
     <p>
       Né en 2006 - Pas mort !
     </p>
-    <div>
-      <img src="./img/github/github-jquery.png" alt="jQuery sur Github" />
-    </div>
+    <dl>
+      <dt>Avril</dt>
+      <dd><img src="./img/github/github-jquery-20160420.png" alt="jQuery sur Github en avril" /></dd>
+      <dt>Septembre</dt>
+      <dd><img src="./img/github/github-jquery-20160914.png" alt="jQuery sur Github en septembre" /></dd>
+    </dl>
   </section>
   <section>
     <h4>Grosses versions jQuery</h4>
     <ul>
       <li>Sélecteur JavaScript en août 2005</li>
       <li>1.0 le 26 août 2006</li>
-      <li>1.2 le 10 septembre 2007 (et UI le 17)</li>
-      <li>1.2.6 le 24 mai 2008 (et Qunit le 09)</li>
-      <li>1.3 le 14 janvier 2009 (et Sizzle)</li>
-      <li>1.7 le 03 novembre 2011 (et Mobile le 16)</li>
+      <li>1.2 le 10 septembre 2007 => et UI le 17</li>
+      <li>1.2.6 le 24 mai 2008 => et Qunit le 09</li>
+      <li>1.3 le 14 janvier 2009 => et Sizzle</li>
+      <li>1.7 le 03 novembre 2011 => et Mobile le 16</li>
       <li>2.0 le 18 avril 2013</li>
-      <li>Dernières versions : 1.12.3 et 2.3.3</li>
+      <li>3.0 le 9 juin 2016</li>
+      <li>Dernières versions : 1.12.4, 2.2.4 et 3.1.0</li>
     </ul>
     <aside class="notes">
-      1.0 en 2006<br>
-      Une release tous les ans avec un projet annexe<br>
-      La 1.0 et la 2.0 qui vivent leur vie
+      1.0 en 2006 puis une release tous les ans avec un projet annexe<br>
+      La 1.x et la 2.x qui vivent leur vie mais plus de nouvelles fonctionnalités (IE6-8 avec la 1.x)<br>
+      La 3.x prend la relève !
     </aside>
   </section>
   <section>
     <h4 class="font-huge">Super pouvoirs (jQuery)</h4>
-    <img src="./img/gifs/gandalf.gif" alt="Dépendances reconnues" style="height: 60vh">
+    <img src="./img/gifs/gandalf.gif" alt="Dépendances reconnues" style="height: 50vh">
     <aside class="notes">
       SIEG<br>
     </aside>
   </section>
   <section>
     <p class="font-huge">Ça fonctionne partout<br>
-      <img src="./img/gifs/indian-dance.gif" alt="C'est lent !" style="height: 70vh"></p>
+      <img src="./img/gifs/indian-dance.gif" alt="C'est lent !" style="height: 50vh"></p>
     <aside class="notes">
       API unifiée pour gérer TOUS les navigateurs<br>
       Simplification du parcours et de la manipulation du DOM pour le développeur<br>
@@ -81,7 +84,7 @@
   </section>
   <section>
     <p class="font-huge">Plugins</p>
-    <img src="./img/gifs/zoolander.gif" alt="Les plugins" style="height: 65vh">
+    <img src="./img/gifs/zoolander.gif" alt="Les plugins" style="height: 50vh">
     <aside class="notes">
       UI, QUnit, Sizzle et Mobile<br>
       Et la communauté qui en fournit énormément aussi (encore actuellement).
@@ -91,7 +94,7 @@
     <h4>Boss fight (jQuery)</h4>
     <img src="./img/boss-fight/58950902.jpg" alt="">
     <aside class="notes">
-      ROMAIN<br>
+      ROMAIN
     </aside>
   </section>
   <section>
@@ -109,13 +112,14 @@
   <section>
     <p class="font-huge">Toujours utile ?</p>
     <ul>
-      <li>ajax => fetch</li>
-      <li>deferred => promise</li>
-      <li>animate => css3</li>
+      <li>Ajax => Fetch</li>
+      <li>Deferred => Promise</li>
+      <li>Animate => CSS3</li>
       <li>...</li>
     </ul>
     <aside class="notes">
-      Mais reste une excellent abstraction pour parcourir et manipuler le DOM
+      Désormais de nombreuses fonctionnalités disponible nativement<br>
+      Oui mais jquery garde une excellente abstraction pour parcourir et manipuler le DOM
     </aside>
   </section>
   <section>
@@ -128,15 +132,19 @@
       <li class="fragment">Comme pour tout !</li>
     </ul>
     <aside class="notes">
-      En entretien pour des profils javascript : programation prototype ? la chaîne de proto ? les types en js ?...<br>
+      En entretien pour des profils javascript : fonctionnement de la chaîne de prototype ? la coercion ? les types en js ?...<br>
       Que se passe t-il derrière un sélecteur, ce qui est réellement exécuté du coup on ne se rend plus compte des manipulations coûteuse sur le DOM
     </aside>
   </section>
   <section>
+    <h4>Besoin d'aide ?</h4>
+    <ul>
+      <li><a href="https://stackoverflow.com/tags/jquery">>760000 questions sur stackoverflow.<br>
+        <small>https://stackoverflow.com/tags/jquery</small></a></li>
+    </ul>
     <h4>Et pour contribuer ?</h4>
     <ul>
       <li>20 à 30 commits/mois avec ~250 contributeurs</li>
-      <li>6 PR ouvertes / ~2000 PR fermées</li>
       <li>Documentation très complète et nombreux exemples</li>
       <li><a href="https://contribute.jquery.org/CLA/">Individual Contributor License Agreement v3.0 (signature électronique)</a></li>
     </ul>
