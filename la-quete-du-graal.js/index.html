@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>la-quête-du-graal.js</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style media="screen">
+			.footer {
+				position: absolute;
+		    	bottom: 0;
+		    	width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding-bottom: 5px;
+			}
+			.link-footer {
+				color: #268bd2;
+				text-decoration: none;
+				transition: color .15s ease;
+				padding: 0 25px;
+			}
+			.link-footer-center {
+				position: fixed;
+				left: calc(50% - 200px);
+    			bottom: 5px;
+			}
+			.reveal .progress:after {
+		    	height: 5px;
+		    	top: -5px;
+			}
+			.epic-banner {
+				font-size: 5rem;
+		    	transform: translateY(-40vh) rotate(-30deg);
+				background: rgba(255, 51, 153, 1);
+        		background-image: linear-gradient(-45deg,rgba(255,255,255,.2)25%,transparent 25%,transparent 50%,rgba(255,255,255,.2)50%,rgba(255,255,255,.2)75%,transparent 75%,transparent);
+        		background-size: 50px 50px;
+        		transition: background-size .1s, color .15s;
+			}
+			.epic-banner:hover {
+        		background-size: 100% 100%;
+        		color: #fff;
+			}
+			.epic-banner a,
+			.epic-banner p {
+				font-size: 5rem;
+				color: #fff;
+			}
+			.epic-banner a:focus,
+			.epic-banner a:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+			.reveal .font-huge {
+				font-size: 4rem;
+			}
+		</style>
+
+    <script src="node_modules/webcomponents.js/HTMLImports.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    <link rel="import" href="slides/intro.html" role="slide">
+    <link rel="import" href="slides/vanilla-jquery.html" role="slide">
+    <link rel="import" href="slides/backbone.html" role="slide">
+    <link rel="import" href="slides/ember.html" role="slide">
+    <link rel="import" href="slides/angular.html" role="slide">
+    <link rel="import" href="slides/react.html" role="slide">
+    <link rel="import" href="slides/webcomponents.html" role="slide">
+    <link rel="import" href="slides/vue.html" role="slide">
+    <link rel="import" href="slides/outro.html" role="slide">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" id="slides"></div>
+
+		</div>
+		<footer class="footer">
+			<span class="">
+				<a class="link-footer" href="https://twitter.com/search?q=%23DevoxxFR">#DevoxxFR</a><br>
+				<a class="link-footer" href="https://twitter.com/search?q=%23LaQueteDuGraalJS">#LaQueteDuGraalJS</a>
+			</span>
+			<span class="">
+				<a class="link-footer" href="https://twitter.com/rmat0n">@rmat0n</a><br>
+				<a class="link-footer" href="https://twitter.com/SiegfriedEhret">@SiegfriedEhret</a>
+			</span>
+			<a class="link-footer-center" href="http://devoxx.fr/">
+				<img src="./img/logo-texte-devoxx-france-400.png" alt="DevoxxFR" />
+			</a>
+		</footer>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+      {
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+
+        const slideContainer = document.getElementById('slides');
+        const links = document.querySelectorAll('link[rel="import"][role="slide"]');
+        let content, i;
+
+        if (links) {
+          for (i=0; i<links.length; i++) {
+            if (links[i].import) {
+              const isLinear = location.search.includes('linear');
+
+              if (isLinear) {
+                content = Array.from(links[i].import.querySelector('.partial').children);
+                if (slideContainer && content.length > 0) {
+                  content.forEach(x => slideContainer.appendChild(x.cloneNode(true)));
+                }
+              } else {
+                content = links[i].import.querySelector('.partial');
+                if (slideContainer && content) {
+                  slideContainer.appendChild(content.cloneNode(true));
+                }
+              }
+
+              // pour tout mettre sur une ligne
+              /*
+              */
+            }
+          }
+        }
+
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+          // Optional reveal.js plugins
+          dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true }
+          ]
+        });
+      }
+		</script>
+
+	</body>
+</html>
