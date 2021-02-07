@@ -12,9 +12,12 @@
     <p>
       Né en 2011 - Pas mort !
     </p>
-    <div>
-      <img src="./img/github/github-ember.png" alt="Ember sur Github" />
-    </div>
+    <dl>
+      <dt>Avril</dt>
+      <dd><img src="./img/github/github-ember-20160420.png" alt="Ember sur Github en avril" /></dd>
+      <dt>Septembre</dt>
+      <dd><img src="./img/github/github-ember-20160914.png" alt="Ember sur Github en septembre" /></dd>
+    </dl>
   </section>
   <section>
     <h3>Grosses versions</h3>
@@ -23,7 +26,7 @@
       <li>Nombreuses pre et rc</li>
       <li>1.0 le 31 août 2013</li>
       <li>2.0 le 13 août 2015</li>
-      <li>Dernières versions : 1.13.13 et 2.5.0</li>
+      <li>Dernières versions : 1.13.13 et 2.7.1</li>
     </ul>
   </section>
 
@@ -34,7 +37,7 @@
     </a>
   </section>
   <section>
-    <h4 class="font-huge">Framework all-in-one</h4>
+    <h4 class="font-huge">Framework tout-en-un</h4>
     <img src="./img/gifs/magic.gif" alt="Ancient TypeScript" style="height: 50vh;">
     <aside class="notes">
       * Tout est là, pas besoin d'aller chercher à droite/à gauche divers composants ou plugins.<br>
@@ -59,20 +62,21 @@
     <h4 class="font-huge">Le monstre !</h4>
     <div><img src="./img/gifs/monster-love.gif" alt=""></div>
     <ul>
-      <li class="fragment">Pas totalement (plugins)</li>
-      <li class="fragment">Technologie connue (handlebars)</li>
+      <li class="fragment">Tout en un mais pas totalement fermé (plugins disponibles)</li>
+      <li class="fragment">Technologies connues (templating avec handlebars)</li>
       <li class="fragment">Convention over configuration = productivité</li>
       <li class="fragment">Ember-cli (génération, tâches...)</li>
     </ul>
     <aside class="notes">
-      Ça a l'air impressionant mais en fait c'est pour nous aider !<br>
-      Noter que Ember-cli a servi de base pour le dévelopement en cours du Angular-cli pour Angular 2
+      Conv over conf : ça a l'air impressionant mais c'est pour nous aider !<br>
+      Ember-cli : a servi de base pour le dévelopement en cours du Angular-cli pour Angular 2
     </aside>
   </section>
   <section>
     <p class="font-huge">Courbe d'apprentissage raide</p>
     <p class="fragment">Certes, moins "rapide" que pour d'autres</p>
     <p class="fragment">POC d'une journée pour un projet de plusieurs mois ???</p>
+    <p class="fragment">(en java je nommerai cette méthode <strong>getMauvaiseFoi()</strong>)</p>
   </section>
   <section>
     <p class="font-huge">Toujours en Ember 1 ?</p>
@@ -83,13 +87,10 @@
   <section>
     <p class="font-huge">SEO ?</p>
     <p class="fragment">Oui avec Fastboot</p>
-    <p class="fragment">Attention aux limitations</p>
+    <p class="fragment">Mais attention aux limitations</p>
     <aside class="notes">
-      Génération côté serveur pour rendre du contenu HTML purement statique, parfait pour du curl et surtout pour les petits robots qui passent ça et là.<br>
-      Limitations :<br>
-      * Des hooks non appelés (didInsertElement et willInsertElement)<br>
-      * Pas de jQuery<br>
-      * Pas de JavaScript servi (donc curl ou robots)<br>
+      Contenu HTML purement statique donc parfait pour du curl et pour les petits robots qui passent ça et là.<br>
+      Mais ni javascript ni jQuery donc pas de reprise possible
     </aside>
   </section>
 
@@ -98,11 +99,12 @@
     <ul>
       <li><a href="https://ember-community-slackin.herokuapp.com/">Slack<br>
         <small>https://ember-community-slackin.herokuapp.com/</small></a></li>
+      <li><a href="https://stackoverflow.com/tags/ember.js">>19000 questions sur StackOverflow<br>
+        <small>https://stackoverflow.com/tags/ember.js</small></a></li>
       <li><a href="https://github.com/nmec/awesome-ember">Awesome Ember<br>
         <small>https://github.com/nmec/awesome-ember</small></a></li>
     </ul>
     <aside class="notes">
-      SIEG<br>
     </aside>
   </section>
   <section>
@@ -113,7 +115,6 @@
     <h4>Et pour contribuer ?</h4>
     <ul>
       <li>5 à 15 commits/jour (+ de 12 000 commits) avec 577 contributeurs</li>
-      <li>~74 PR ouvertes / ~5200 PR fermées</li>
       <li>Meetups peu actifs / présents en conférences</li>
       <li>Documentation complète, nombreux exemples</li>
     </ul>

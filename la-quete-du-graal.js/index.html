@@ -23,8 +23,8 @@
 		<style media="screen">
 			.footer {
 				position: absolute;
-		    	bottom: 0;
-		    	width: 100%;
+		    bottom: 0;
+		    width: 100%;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -38,20 +38,24 @@
 			}
 			.link-footer-center {
 				position: fixed;
-				left: calc(50% - 200px);
-    			bottom: 5px;
+				left: calc(50%);
+    		bottom: 5px;
+			}
+			.link-footer-center img {
+				width: 2.5em;
 			}
 			.reveal .progress:after {
-		    	height: 5px;
-		    	top: -5px;
+		    height: 5px;
+		    top: -5px;
 			}
 			.epic-banner {
 				font-size: 5rem;
-		    	transform: translateY(-40vh) rotate(-30deg);
+        transform: translateY(-40vh) rotate(-30deg);
 				background: rgba(255, 51, 153, 1);
-        		background-image: linear-gradient(-45deg,rgba(255,255,255,.2)25%,transparent 25%,transparent 50%,rgba(255,255,255,.2)50%,rgba(255,255,255,.2)75%,transparent 75%,transparent);
-        		background-size: 50px 50px;
-        		transition: background-size .1s, color .15s;
+        background-image: linear-gradient(-45deg,rgba(255,255,255,.2)25%,transparent 25%,transparent 50%,rgba(255,255,255,.2)50%,rgba(255,255,255,.2)75%,transparent 75%,transparent);
+        background-size: 50px 50px;
+        transition: background-size .1s, color .15s;
+        color: #fff;
 			}
 			.epic-banner:hover {
         		background-size: 100% 100%;
@@ -70,6 +74,9 @@
 			.reveal .font-huge {
 				font-size: 4rem;
 			}
+      .line-through {
+        text-decoration: line-through;
+      }
 		</style>
 
     <script src="node_modules/webcomponents.js/HTMLImports.js"></script>
@@ -108,15 +115,15 @@
 		</div>
 		<footer class="footer">
 			<span class="">
-				<a class="link-footer" href="https://twitter.com/search?q=%23DevoxxFR">#DevoxxFR</a><br>
+				<a class="link-footer" href="https://twitter.com/search?q=%23JugSummerCamp">#JugSummerCamp</a><br>
 				<a class="link-footer" href="https://twitter.com/search?q=%23LaQueteDuGraalJS">#LaQueteDuGraalJS</a>
 			</span>
-			<span class="">
+			<span>
 				<a class="link-footer" href="https://twitter.com/rmat0n">@rmat0n</a><br>
 				<a class="link-footer" href="https://twitter.com/SiegfriedEhret">@SiegfriedEhret</a>
 			</span>
-			<a class="link-footer-center" href="http://devoxx.fr/">
-				<img src="./img/logo-texte-devoxx-france-400.png" alt="DevoxxFR" />
+			<a class="link-footer-center" href="http://www.jugsummercamp.org/">
+				<img src="./img/conferences/logo-jugsummercamp.png" alt="Jug Summer Camp" />
 			</a>
 		</footer>
 

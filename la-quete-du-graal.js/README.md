@@ -18,12 +18,4 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
    $ npm start
    ```
 
-5. Open <http://localhost:8000> to view your presentation
-
-## TODO
-
-- tendance de chaque framework (historique star/fork github ? Google trends ?
-- compter les plugins pour chaque framework (github => ng-* ?)
-
-
-
+5. Open <http://localhost:8000> (down/right keys) or <http://localhost:8000/?linear#/> (only right) to view your presentation

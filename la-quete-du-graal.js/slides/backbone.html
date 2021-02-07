@@ -2,7 +2,7 @@
   <section data-background="./img/Backbone.JS.svg" data-background-size="50vh">
     <h2 style="display: none;">Backbone</h2>
     <aside class="notes">
-      TEMPS = 9 min<br>
+      TEMPS = 8 ou 9 min<br>
       SIEG<br>
     </aside>
   </section>
@@ -12,9 +12,12 @@
     <p>
       Né le 13 octobre 2010 - Pas mort !
     </p>
-    <div>
-      <img src="./img/github/github-backbone.png" alt="Backbone sur Github" />
-    </div>
+    <dl>
+      <dt>Avril</dt>
+      <dd><img src="./img/github/github-backbone-20160420.png" alt="Backbone sur Github en avril" /></dd>
+      <dt>Septembre</dt>
+      <dd><img src="./img/github/github-backbone-20160914.png" alt="Backbone sur Github en septembre" /></dd>
+    </dl>
   </section>
   <section>
     <h3>Grosses versions</h3>
@@ -31,26 +34,22 @@
   </section>
   <section>
     <h3>Un objectif qui a perduré</h3>
-    <img src="./img/gifs/chuck-norris.gif" alt="Objectif" style="height: 60vh">
+    <img src="./img/gifs/chuck-norris.gif" alt="Objectif" style="height: 50vh">
     <aside class="notes">
       A l'origine, simplifier l'interaction avec un arrière-guichet de type API RESTful (pour ceux qui bloquent encore, arrière-guichet c'est back-office).<br>
-
-      Et pour cela Backbone utilise un Model qui appellera l'API.<br>
-      Pour les listes Collection et pour la vue une View.<br>
-
-      Et malgré ses 6 années de vie, la librairie a gardé cette objectif et n'est pas partie dans tous les sens avec d'autres concepts.
+      Et pour cela Backbone utilise un Model qui appellera l'API, pour les listes Collection et pour la vue une View.
     </aside>
   </section>
   <section>
     <h3>S'appuie sur des dépendances reconnues</h3>
-    <img src="./img/gifs/zoolander-voiture.gif" alt="Dépendances reconnues" style="height: 60vh">
+    <img src="./img/gifs/zoolander-voiture.gif" alt="Dépendances reconnues" style="height: 50vh">
     <aside class="notes">
       jQuery, JSON2 et Underscores ou Lodash ou Zepto
     </aside>
   </section>
   <section>
-    <h3>Courbe d'apprentissage douce</h3>
-    <img src="./img/gifs/mortel.gif" alt="Courbe d'apprentissage" style="height: 60vh">
+    <h3>Courbe d'apprentissage rapide</h3>
+    <img src="./img/gifs/mortel.gif" alt="Courbe d'apprentissage" style="height: 50vh">
     <aside class="notes">
       Models / Collections / Views et une API RESTful mais pas que (d'autres storage sont disponibles en plugins).
     </aside>
@@ -81,7 +80,8 @@
     <h3>Minimaliste</h3>
     <img src="./img/gifs/cuteness.gif" alt="Minimaliste" style="height: 50vh">
     <aside class="notes">
-      Oui il n'est pas mobile first, n'est pas isomorphique, pas de framework de tests, pas de dirty checking
+      Oui il n'est pas mobile first, n'est pas isomorphique, pas de framework de tests, pas de dirty checking...<br>
+      La philosophie a perduré
     </aside>
   </section>
   <section>
@@ -89,8 +89,8 @@
     <img src="./img/gifs/perfect.gif" alt="Bonnes pratiques" style="height: 50vh;"></p>
     <p>Suivez les bonnes pratiques !<br>
     <aside class="notes">
-      Bonnes pratiques :
-      * Préférez le changement d'état sur un model plutôt que de manipuler le DOM directement (surtout sur retour d'évènement)<br>
+      Encore une fois : c'est le concept de base et de nombreux projets fonctionnent très bien comme ça. Bonnes pratiques :<br>
+      * Ne manipuler le DOM directement<br>
       * Evitez les multiples rendering sur une très courte période (utilisez _.debounce)<br>
       * Modularisez votre application
     </aside>
@@ -98,12 +98,12 @@
   <section>
     <h3>Mais si besoin, data binding ?</h3>
     <p class="fragment">
-      <a href="http://kmalakoff.github.io/knockback/">Knockout / Knockback<br>
-        <small>http://kmalakoff.github.io/knockback/</small></a><br>
       <a href="http://epoxyjs.org/">Epoxy.js<br>
         <small>http://epoxyjs.org/</small></a><br>
-      <a href="https://github.com/rendrjs/rendr">Rivets.js<br>
-        <small>https://github.com/rendrjs/rendr</small></a><br>
+      <a href="http://rivetsjs.com/">Rivets.js<br>
+        <small>http://rivetsjs.com/</small></a><br>
+      <a href="http://kmalakoff.github.io/knockback/">Knockout / Knockback<br>
+        <small>http://kmalakoff.github.io/knockback/</small></a><br>
       <span>Toutes maintenues !</span>
     </p>
   </section>
@@ -112,10 +112,11 @@
     <p class="fragment">
       <a href="https://github.com/rendrjs/rendr">Rendr (Node.js)<br>
         <small>https://github.com/rendrjs/rendr</small></a><br>
-      <span>Services</span>
+      <span>Services comme BromBone, getseo.js ou PreRender</span>
     </p>
     <aside class="notes">
-      BromBone, getseo.js ou PreRender (Backbone mais aussi Angular et Ember)
+      Là vous êtes tout nus, mais bien...<br>
+      A noter que PreRender fait aussi du Angular et Ember
     </aside>
   </section>
 
@@ -125,7 +126,7 @@
       <li><a href="https://groups.google.com/forum/#!forum/backbonejs">Une mailing list<br>
         <small>https://groups.google.com/forum/#!forum/backbonejs</small></a></li>
       <li>Un canal IRC: #documentcloud on Freenode</li>
-      <li><a href="https://stackoverflow.com/tags/backbone.js">>19000 questions sur StackOverflow<br>
+      <li><a href="https://stackoverflow.com/tags/backbone.js">~20000 questions sur StackOverflow<br>
         <small>https://stackoverflow.com/tags/backbone.js</small></a></li>
       <li><a href="https://github.com/sadcitizen/awesome-backbone">Awesome BackboneJS<br>
         <small>https://github.com/sadcitizen/awesome-backbone</small></a></li>
@@ -135,8 +136,6 @@
     <h3>Et pour contribuer ?</h3>
     <ul>
       <li>15 à 20 commits/mois avec ~280 contributeurs</li>
-      <li>~30 issues ouvertes / ~2200 issues fermées</li>
-      <li>~30 PR ouvertes / ~1730 PR fermées</li>
       <li>Très bonne documentation, nombreux exemples et code documenté</li>
       <li>Meetup Paris (1 session tous les 2 à 3 mois)</li>
     </ul>

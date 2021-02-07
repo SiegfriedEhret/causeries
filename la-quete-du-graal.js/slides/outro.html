@@ -6,8 +6,9 @@
       &mdash; Mark Twain
     </blockquote>
     <aside class="notes">
-      TEMPS = 37 min<br>
-      SIEG<br>
+      TEMPS = 39 min<br>
+      SIEG
+      Déjà on s'est bien éclaté à tout regarder, tout lire, tout comparer et vous résumer plus de 10 ans d'histoire du développement web.
     </aside>
   </section>
 
@@ -15,15 +16,14 @@
     <a href="https://twitter.com/thepracticaldev/status/721716958769635328"><img src="./img/design-choices.png" alt="" style="height: 60vh;"><br>
       <small>https://twitter.com/thepracticaldev/status/721716958769635328</small></a>
     <aside class="notes">
-      On ne cessera de le répéter: attention à la hype !
-      Le choix de ce que vous allez utiliser doit être **réfléchit**.
-      En fonction du projet, de l'archi, de l'équipe (c'est souvent elle qui a la main en fonction des compétences et des envies...)
+      On ne cessera de le répéter : attention à la hype !<br>
+      Le choix de ce que vous allez utiliser doit être **réfléchi** par rapport à vos besoins (on y reviendra plus loin).
     </aside>
   </section>
 
   <section>
-    <h3>Le grand gagnant</h3>
-    <p class="fragment">Pour son logo trop kawaii...</p>
+    <h3>🏆 Le grand gagnant 🏆</h3>
+    <p class="fragment">Dans la catégorie du logo trop kawaii<br>(et uniquement cette catégorie)</p>
     <p class="fragment">
       <img src="./img/logos/emberjs.png" alt="Ember" style="margin-bottom: 0"><br>
       <img src="./img/gifs/rainbow-puke.gif" alt="Rainbow Puke" style="border: none; margin: 0; box-shadow: none;">
@@ -31,20 +31,23 @@
   </section>
 
   <section>
-    <h2>Les comparaisons de la mort</h2>
+    <h2>Plus sérieusement, voici les comparaisons de la mort</h2>
     <img src="./img/gifs/let-them-fight.gif" alt="" style="height: 40vh;">
     <aside class="notes">
-      ROMAIN<br>
+      ROMAIN
     </aside>
   </section>
 
   <section>
     <h3>Présence en conférences ?</h3>
-    <p class="fragment">Total de 2013 à 2016 des sessions vidéos Devoxx BE + FR</p>
+    <p class="fragment">
+      Total de 2013 à 2016 des sessions vidéos Devoxx BE + FR<br>
+      <small>i.e. les sessions mises en avant par l'organisation</small>
+    </p>
     <p class="fragment">
     <table>
       <tr>
-        <td style="vertical-align: bottom; text-align: center;"><img src="./img/AngularJS_logo.svg" alt="Angular" style="width: 160px; margin: 0; border: none; box-shadow: none;"> (1&2)</td>
+        <td style="vertical-align: bottom; text-align: center;"><img src="./img/AngularJS_logo.svg" alt="Angular" style="width: 160px; margin: 0; border: none; box-shadow: none;"> (1+2)</td>
         <td style="vertical-align: bottom; text-align: center;">19</td>
       </tr>
       <tr>
@@ -77,10 +80,10 @@
     </p>
     <p class="fragment">Ember ? Aurelia ?</p>
     <aside class="notes">
-      * La communication de google est là ! Mais du coup qui est venu le premier entre l'oeuf et la poule i.e il est présent car utilisé par les développeurs ou les développeurs font de l'angular car Devoxx en parle...<br>
-      * Sous-représentés Backbone, Knockout et Meteor<br>
-      * Sur-représentés Polymer et Web Components<br>
-      * Enfin 2 grands absents Ember et Aurelia
+      * Conférence à la gloire de google ! Est-il présent car utilisé par les développeurs ou les développeurs font de l'angular car Devoxx en parle...<br>
+      * Sur-représentés Polymer et Web Components par rapport à l'utilisation en entreprise<br>
+      * Sous-représentés Backbone, Vue et Meteor<br>
+      * Et 2 grands absents : Aurelia mais surtout Ember !
     </aside>
   </section>
 
@@ -90,8 +93,8 @@
     <p class="fragment">Point commun entre Angular et jQuery ?</p>
     <p class="fragment"><img src="./img/issuestats/issuestats-angular1.png" alt="Issue Stats Angular et jQuery" style="width: 160vh;"></p>
     <aside class="notes">
-      En bleu clair les issues fermées, en foncé les PR fermées<br>
-      Point commun entre Angular et jQuery : première heure correcte puis issues mais surtout PR qui restent ouvertes très très longtemps
+      Analyse des temps de fermeture des issues et pr<br>
+      En bleu clair les issues fermées, en foncé les PR fermées
     </aside>
   </section>
 
@@ -125,15 +128,37 @@
       <a href="http://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157">We Tested How Googlebot Crawls Javascript And Here’s What We Learned<br>
         <small>http://searchengineland.com/tested-googlebot-crawls-javascript-heres-learned-220157</small></a>
     </p>
+    <p class="fragment">Mais ce n'est pas que pour les moteurs de recherche !</p>
     <p class="fragment">
       <img src="./img/gifs/allo.gif" alt="Non mais allo quoi !" style="position: fixed; top: -100px; right: -120px; transform: rotate(10deg);">
     </p>
     <aside class="notes">
-      TEMPS = 40 min<br>
+      TEMPS = 42 min<br>
       SIEG<br>
       Assez couteux et cela aura des implications dans votre implémentation<br>
-      Code javascript final indexé, Google et Bing lisent le DOM final<br>
-      Genre, t'es un framework en 2016, t'as pas de rendu côté server, non mais allo quoi !
+      Code javascript final est déjà indexé, Google et Bing lisent le DOM final<br>
+      Genre, t'es un framework en 2016, t'as pas de rendu côté serveur, non mais allo quoi !
+    </aside>
+  </section>
+
+  <section>
+    <h3>Tendances de frameworks</h3>
+    <div>
+      <img src="./img/gifs/bieber.gif" alt="">
+    </div>
+    <ul>
+      <li>moderne</li>
+      <li>cli</li>
+      <li>devtools</li>
+      <li>rendu serveur</li>
+    </ul>
+    <p class="fragment">=> Plateforme</p>
+    <aside class="notes">
+      Où va-t-on ?<br>
+      * les frameworks profite des dernières specs JS<br>
+      * ils ont quasiment tous un outil en ligne de commande, offrant souvent un outillage spécifique (donc peu de choix)<br>
+      * plusieurs framework ont sorti une extension navigateur<br>
+      * le rendu serveur est dépendent de certains langages / serveur => le front commande les technos back ?
     </aside>
   </section>
 
@@ -141,8 +166,7 @@
     <h3>Et les trends ?</h3>
     <img src="./img/trends.png" alt="Trends" style="margin-bottom: 0">
     <aside class="notes">
-      * chose étonnante: depuis react, les recherches angular continent de croitre<br>
-      * backbone est plutôt stable, avec une petite tendance à diminuer
+      * chose étonnante: depuis react, les recherches angular continent de croitre
     </aside>
   </section>
 
@@ -159,24 +183,24 @@
     <h3>Pourquoi tous ces frameworks ?</h3>
     <blockquote>Car les géants se battent entre eux<br>pour gagner des devs.</blockquote>
     <a href="https://www.pandastrike.com/posts/20150311-react-bad-idea"><small>https://www.pandastrike.com/posts/20150311-react-bad-idea</small></a>
-    <img src="./img/gifs/fight.gif" alt=""><br>
+    <img src="./img/gifs/fight.gif" alt="Fight"><br>
     <aside class="notes">
       * Bataille de recrutement entre les géants du web<br>
-      * Du coup: comment les attirer ?<br>
-      * Avec des technos / frameworks sexy !<br>
+      * Du coup comment les attirer ?<br>
+      * Avec des technos / frameworks sexy !
     </aside>
   </section>
 
   <section>
     <h3>Communauté (articles, commentaires...) ?</h3>
     <p class="fragment">Orientée <em>Rock Stars</em></p>
-    <p class="fragment"><em>Fan boys</em> (Objectivité ?)</p>
+    <p class="fragment"><em>Fan boys</em> (Objectivité ? Disclaimer ?)</p>
     <p class="fragment"><em>Hipsteritude / hypitude</em></p>
     <p class="fragment">Mais peut-on s'en passer ?</p>
     <aside class="notes">
-      TEMPS = 42 min<br>
+      TEMPS = 45 min<br>
       ROMAIN<br>
-      Très orientée rock-stars : à la fois des boîtes et mais aussi des développeurs (notre avis sera le leur)<br>
+      Très orientée rock-stars : à la fois les boîtes et mais aussi des développeurs (notre avis sera le leur)<br>
 
       Affinité ok tant qu'on est ouvert à débat et objection, en revanche contre-attaquer pour toute question ou critique...
       Du coup quelle est l'objectivité de ces commentaires (disclaimer ? expert ?)<br>
@@ -228,26 +252,38 @@
     <a href="http://jsblocks.com/#performance">
       <img src="./img/jsblocks.png" alt="jsBlocks Performance" style="width: 80vh;">
     </a>
+    <aside class="notes">
+      C'est toujours la course à la vitesse, au rendering.<br>
+      Les caractéristiques du framework passent à la trappe pour arriver uniquement à de la performance.<br>
+      Mais, est-ce uniquement de performance dont nous avons besoin ?
+    </aside>
   </section>
 
   <section>
     <h3>Aller, sérieusement, il est où le Graal ?</h3>
     <img src="./img/gifs/your-opinion-man.gif" alt="">
-    <p class="fragment">Le choix dépend de la vision du PO et de l'équipe</pli>
+    <p class="fragment">Tous vivants !!!</p>
+    <p class="fragment">Le choix dépendra du projet, de la vision du PO et de l'équipe</p>
     <aside class="notes">
       ROMAIN<br>
-      * Tous les frameworks qu'on vient de parcourir sont toujours vivants<br>
-      * Par exemple : Très grosse appli => framework + style guide<br>
-      * Par exemple : Interface <strong>react</strong>ive => assemblage de librairies<br>
-      * Par exemples : ADN java dans une équipe => TypeScript + Angular 2 ?<br>
-      * Les exceptions, ça existe et tant mieux !<br>
+      * Exemple 1 : ADN java dans une équipe => TypeScript avec Angular 2 ?<br>
+      * Exemple 2 : Contrainte forte en SEO avec une app mobile ? Ou peut-être exactement le contraire ?
     </aside>
+  </section>
+
+  <section>
+    <h1>
+      1. Make it work<br>
+      2. Make it right<br>
+      3. Make it fast
+    </h1>
+    <p>(Kent Beck)</p>
   </section>
 
   <section>
     <h3>Remerciements</h3>
     <img src="./img/gifs/headbanging_waynes_world.gif" alt="">
-    <p>彩子, Del, Flo, Sylvain, Tata Céline, Cyril, Paul, <strong>vous</strong></p>
+    <p>彩子, Del, Flo, Sylvain, Tata Céline, Cyril, Wassim, Paul, <strong>vous</strong></p>
     <p><a href="https://duckduckgo.com/">DuckDuckGo</a>, <a href="https://www.qwant.com/">Qwant</a>, <a href="https://giphy.com/">Giphy</a></p>
     <p><a href="https://gitlab.com/">Gitlab</a><br>
       <a href="https://gitlab.com/SiegfriedEhret/la-quete-du-graal.js"><small>https://gitlab.com/SiegfriedEhret/la-quete-du-graal.js</small></a></p>
@@ -255,9 +291,8 @@
 
   <section>
     <h3>Merci ! Des questions ?</h3>
-    <p class="font-huge"><a href="https://twitter.com/rmat0n">@rmat0n</a></p>
-    <p class="font-huge"><a href="https://twitter.com/SiegfriedEhret">@SiegfriedEhret</a></p>
-    <p><a href="https://frama.link/graaljs">https://frama.link/graaljs</a></p>
-    <p><a href="https://twitter.com/hashtag/LaQueteDuGraalJs">#LaQueteDuGraalJs</a></p>
+    <img src="./img/gifs/sumsup.gif" alt="">
+    <p class="font-huge"><a href="https://twitter.com/rmat0n">@rmat0n</a> / <a href="https://twitter.com/SiegfriedEhret">@SiegfriedEhret</a></p>
+    <p><a href="https://frama.link/graaljs">https://frama.link/graaljs</a> / <a href="https://twitter.com/hashtag/LaQueteDuGraalJs">#LaQueteDuGraalJs</a></p>
   </section>
 </section>
