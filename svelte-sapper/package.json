@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "backslide": "^2.3.3"
+    "backslide": "^2.6.2"
   }
 }
