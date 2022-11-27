@@ -1,43 +1,25 @@
-@font-face {
-  font-family: 'Jostvf';
-  src: url('/Jost-VF.ttf') format('truetype');
-}
-
 // Theme
 // ---------------------------------------------------------------------------
 
 :root {
-  /* From Farrow & Ball */
-  --ovalRoomBlue: #8b9d9b;
-  --railings: #45484b;
-  --imperial-purple: #55566b;
-  --lake-red: #c8526a;
-  --wevet: #eee9e7;
-  --code: #2d2d2d;
-
-  /*  theme vars */
-  --back: var(--wevet);
-  --prime: var(--lake-red);
-  --text: var(--imperial-purple);
-  --dark: var(--code);
-
+  --primary          : rgba(0,170,89,1);
+  --secondary        : var(--primary);
+  --tertiary         : rgba(89,89,89,1);
+  --light            : #FFF;
+  --dark             : #333;
+  --text-dark        : var(--tertiary);
+  --text-light       : var(--light);
+  --code-background  : #F8F8F8;
   --overlay          : transparentize(#000, .5);
-  --font-size        : 1.5rem;
-  --font-size-impact : 6rem;
-  --font             : Jostvf, Arial, Helvetica, sans-serif;
-  --font-title       : Jostvf, Arial, Helvetica, sans-serif;
+  --font-size        : 28px;
+  --font-size-impact : 128px;
+  --font             : Arial, Helvetica, sans-serif;
+  --font-title       : Arial, Helvetica, sans-serif;
   --font-fixed       : 'Lucida Console', Monaco, monospace;
   --margin           : 20px;
   --iframe-scale     : 1.5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --back: var(--imperial-purple);
-    --prime: var(--lake-red);
-    --text: var(--wevet);
-  }
-}
 
 // CSS Base
 // ---------------------------------------------------------------------------
@@ -47,25 +29,23 @@ body { font-family: var(--font); }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 var(--margin) 0;
   font-family: var(--font-title);
-  background: var(--prime);
-  color: var(--text);
-  padding: 0 1rem;
-  border-radius: 0.5rem;
 }
+h1 { color: var(--primary); }
+h2 { color: var(--secondary); }
+h3 { color: var(--tertiary); }
 li { margin-bottom: .25em; };
 pre, code {
   text-align: left;
   font-family: var(--font-fixed);
-  color: var(--prime);
-  background: var(--code);
-  padding: 0 .2rem;
+  color: var(--secondary);
+  background: $code-background;
 }
-a, a:visited, a:hover, a:active { color: var(--text); }
+a, a:visited, a:hover, a:active { color: $text-dark; }
 img { vertical-align: inherit; }
 blockquote {
   border-left: 8px solid;
   padding-left: .5em;
-  color: var(--prime);
+  color: $tertiary;
   text-align: left;
   margin: 1em 0;
   & > p { margin: 0; }
@@ -76,20 +56,19 @@ blockquote {
 // ---------------------------------------------------------------------------
 
 .remark-code { font-size: .9em; }
-.remark-container { background: var(--dark); }
+.remark-container { background: $dark; }
 .remark-slide-scaler { box-shadow: none; }
 .remark-notes { font-size: 1.5em; }
 
 .remark-slide-content {
-  font-size: var(--font-size);
+  font-size: $font-size;
   padding: 1em 2em;
-  color: var(--text);
+  color: $text-dark;
   background-size: cover;
-  background-color: var(--back);
 }
 
 .remark-slide-number {
-  color: var(--text);
+  color: $text-light;
   right: 1em;
   opacity: .6;
   font-size: 0.8em;
@@ -99,28 +78,27 @@ blockquote {
 
 // Additions
 .impact {
-  background-color: var(--prime);
+  background-color: $primary;
   vertical-align: middle;
   text-align: center;
-  &, h1, h2 { color: var(--text); }
-  h1 { font-size: var(--font-size-impact); }
+  &, h1, h2 { color: $text-light; }
+  h1 { font-size: $font-size-impact; }
 }
 
 .full {
-  &, h1, h2 { color: var(--text); }
+  &, h1, h2 { color: $text-light; }
   &iframe {
-    height: calc((100% / var(--iframe-scale)) - 1.2em);
-    width: calc(100% / var(--iframe-scale));
-    transform: scale(var(--iframe-scale));
+    height: calc(#{100%/$iframe-scale} - 1.2em);
+    width: 100%/$iframe-scale;
+    transform: scale($iframe-scale);
     transform-origin: 0 0;
     border: 0;
   }
 }
 
 .bottom-bar {
-  background-color: var(--back);
-  border-top: 1px solid var(--prime);
-  color: var(--text);
+  background-color: $primary;
+  color: $text-light;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -161,27 +139,31 @@ blockquote {
 // Images
 .responsive > img { width: 100%; height: auto; };
 .contain { background-size: contain; };
-.overlay { box-shadow: inset 0 0 0 9999px var(--overlay); }
+.overlay { box-shadow: inset 0 0 0 9999px $overlay; }
 
 // Text
 .left { text-align: left; }
 .right { text-align: right; }
 .center { text-align: center; }
 .justify { text-align: justify; }
-.primary { color: var(--prime); }
-.primary-bg { background-color: var(--prime); }
-.secondary { color: var(--prime); }
-.secondary-bg { background-color: var(--prime); }
-.tertiary { color: var(--prime); }
-.tertiary-bg { background-color: var(--prime); }
-.alt { color: var(--prime); };
-.em { color: var(--prime); };
+.primary { color: $primary; }
+.primary-bg { background-color: $primary; }
+.secondary { color: $secondary; }
+.secondary-bg { background-color: $secondary; }
+.tertiary { color: $tertiary; }
+.tertiary-bg { background-color: $tertiary; }
+.alt { color: $secondary; };
+.em { color: $tertiary; };
 .thin { font-weight: 200; }
 .huge { font-size: 2em; }
 .big { font-size: 1.5em; }
 .small { font-size: .8em; }
 .strike { text-decoration: line-through; }
-.alt-bg { background-color: var(--prime); };
+.dark { color: $dark; }
+.dark-bg { background-color: $dark; }
+.light { color: $light; }
+.light-bg { background-color: $light; }
+.alt-bg { background-color: $secondary; };
 
 // Simple 12-columns grid system
 .row {
@@ -207,18 +189,9 @@ blockquote {
   }
 }
 
-.col-1 { width: calc((100% / 12) * 1); }
-.col-2 { width: calc((100% / 12) * 2); }
-.col-3 { width: calc((100% / 12) * 3); }
-.col-4 { width: calc((100% / 12) * 4); }
-.col-5 { width: calc((100% / 12) * 5); }
-.col-6 { width: calc((100% / 12) * 6); }
-.col-7 { width: calc((100% / 12) * 7); }
-.col-8 { width: calc((100% / 12) * 8); }
-.col-9 { width: calc((100% / 12) * 9); }
-.col-10 { width: calc((100% / 12) * 10); }
-.col-11 { width: calc((100% / 12) * 11); }
-.col-12 { width: calc((100% / 12) * 12); }
+@for $i from 1 through 12 {
+  .col-#{$i} {width: 100% / 12 * $i; }
+}
 
 // Animations
 @keyframes fadeIn {
@@ -233,12 +206,6 @@ blockquote {
   .remark-visible & { animation-name: fadeIn; }
 }
 
-// Fix code blocks
-
-.hljs-github .hljs {
-  color: var(--text);
-  background: var(--code);
-}
 
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
@@ -257,4 +224,19 @@ blockquote {
     top: 0 !important;
     left: 0 !important;
   }
+}
+
+// Extra stuff
+// ---------------------------------------------------------------------------
+
+img {
+  display: block;
+  margin: 0 auto;;
+  max-height: 50%;
+  max-width: 100%;
+  vertical-align: inherit;
+}
+.twitter img {
+  border-radius: 50%;
+  max-width: 50%;
 }

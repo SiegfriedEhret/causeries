@@ -23,16 +23,13 @@ class: impact
 * [«Fast as C, sleek as Ruby. A language for humans and computers»](https://manas.tech/projects/crystal/)
 --
 
-* GitHub ⭐: 15.2k (Scala: 13.7k (v3: 4.9k), Elixir: 17.6k, Ruby: 19k)
---
-
-* Twitter: 5.7k (Ruby: 2.8k, Scala: 31.1k, Elixir: 34.7k, Justin Bieber: 114.3M)
+* GitHub ⭐: 15.2k (Scala: 13k, Elixir: 17,6k)
 --
 
 * Version 0.1.0 en juin 2014
 --
 
-* Version actuelle: 1.4.0 (7 avril 2022)
+* Version actuelle: 0.35.1 ([1.0 en approche !](https://crystal-lang.org/2020/03/03/towards-crystal-1.0.html))
 --
 
 * [Catalogue des installations](https://crystal-lang.org/install/)
@@ -47,7 +44,7 @@ class: impact
 * [etc !](https://github.com/crystal-lang/crystal/wiki/Used-in-production)
 --
 
-* `beulogue` et `brrr` (mes petits projets persos)
+* [beulogue](https://github.com/SiegfriedEhret/beulogue) et [brrr](https://github.com/nyrst/brrr) (hey c'est moi ça !)
 
 ---
 
